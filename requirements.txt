@@ -1,0 +1,24 @@
+# --- Agent framework ---
+google-adk>=1.10.0
+google-genai>=1.20.0
+litellm>=1.50.0            # Groq / OpenAI / Anthropic / Ollama via ADK
+
+# --- Computer / desktop control ---
+pyautogui>=0.9.54
+pillow>=10.0.0
+pyperclip>=1.8.2
+pygetwindow>=0.0.9; sys_platform == "win32"
+
+# --- Browser automation ---
+playwright>=1.47.0
+
+# --- Spreadsheets ---
+openpyxl>=3.1.2
+
+# --- UI ---
+streamlit>=1.37.0          # needs st.fragment(run_every=...)
+
+# --- Config / optional persistence ---
+python-dotenv>=1.0.0
+aiosqlite>=0.20.0          # only used if EXORA_SESSION_DB is set
+sqlalchemy>=2.0            # same
