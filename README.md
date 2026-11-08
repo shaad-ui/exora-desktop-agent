@@ -153,6 +153,8 @@ python -m pytest -q
 ```
 The offline suite needs no API key, display or browser. It covers the file and spreadsheet tools, the verification gate, the approval gate, message sanitizing and an end-to-end ADK run with a scripted model. Real-model runs are documented in `docs/TEST_REPORT.md`.
 
+http://localhost:8503/
+
 ## Limitations
 - Pixel-level clicking needs a vision-capable model and is the least reliable path; DOM-based browser automation is far more reliable.
 - One task at a time and one automated browser profile (not logged in to your accounts).
